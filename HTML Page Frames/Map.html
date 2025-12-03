@@ -70,6 +70,24 @@
 			cursor: pointer;
 		}
 
+		.button-profile {
+			position: absolute;
+			width: 75px;
+  			height: 75px;
+  			border-radius: 50%;
+			top: 75px;
+			left: 35px;
+			background-color: white;
+			color: black;
+			padding: 5px 10px;
+			border: none;
+			display: flex;  			
+			justify-content: center;
+  			align-items: center;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
 		.map {
 			position: absolute;
 			top: 0px;
@@ -110,16 +128,16 @@
 </head>
 
 <body>
-	<button class="button-home"><b>Home</b></button>
-	<button class="button-map"><b>Map</b></button>
-	<button class="button-analytics"><b>Analytics</b></button>
-	<button class="button-alerts"><b>Alerts</b></button>
-	<button class="button-support"><b>Support</b></button>
+	<button class="button-profile"><b><img src="ProfileIconPlaceholder.png" alt="profile"></b></button>
+	<a href="Dashboard.html"><button class="button-home"><b>Home</b></button></a>
+	<a href="Map.html"><button class="button-map"><b>Map</b></button></a>
+	<a href="Analytics.html"><button class="button-analytics"><b>Analytics</b></button></a>
+	<a href="Alerts.html"><button class="button-alerts"><b>Alerts</b></button></a>
+	<a href="Support.html"><button class="button-support"><b>Support</b></button></a>
 	<img src="maptest.png" alt="map" class="map" width="1130" height="667">
 	<img src="SearchbarPlaceholder.png" alt="searchbar" class="search-placeholder">
 	<img src="DropdownPlaceholder1.png" alt="region" class="dropdown1-placeholder">
 	<img src="DropdownPlaceholder2.png" alt="district" class="dropdown2-placeholder">
-	<img src="ProfileIconPlaceholder.png" alt="profile" class="profile-placeholder" width="75" height="75">
 </body>
 
 

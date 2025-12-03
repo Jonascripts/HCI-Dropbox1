@@ -1,7 +1,7 @@
 export const pieChartData = {
     labels: [ 
         "Routine Maintenance",
-        "Battery Dead",
+        "Battery Replacement",
         "Internet Outage",
         "Physical Damage"
     ], 

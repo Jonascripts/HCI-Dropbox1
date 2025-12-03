@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Support Page</title>
+	<title>Alerts List Page</title>
 	<style>
 		.container {
         		position: relative; /* reference point for absolute positioning */
@@ -82,15 +82,40 @@
 			left: 35px;
 		}
 
-		hr {
+		.search-placeholder {
+			position: absolute;
+			top: 165px;
+			left: 255px;
+		}
+
+		.dropdown1-placeholder {
+			position: absolute;
+			top: 165px;
+			left: 880px;
+		}
+
+		.dropdown2-placeholder {
+			position: absolute;
+			top: 165px;
+			left: 1080px;
+		}
+
+		.hr1 {
 			width: 1000px;
 			position: absolute;
 			top: 130px;
 			left: 260px;
 		}
-	</style>
-</head>
 
+		.hr2 {
+			width: 1000px;
+			position: absolute;
+			top: 252px;
+			left: 260px;
+		}
+	</style>
+
+</head>
 
 <body>
 	<button class="button-home"><b>Home</b></button>
@@ -98,26 +123,21 @@
 	<button class="button-analytics"><b>Analytics</b></button>
 	<button class="button-alerts"><b>Alerts</b></button>
 	<button class="button-support"><b>Support</b></button>
+	<img src="SearchbarPlaceholder.png" alt="searchbar" class="search-placeholder">
+	<img src="DropdownPlaceholder1.png" alt="region" class="dropdown1-placeholder">
+	<img src="DropdownPlaceholder2.png" alt="district" class="dropdown2-placeholder">
 	<img src="ProfileIconPlaceholder.png" alt="profile" class="profile-placeholder" width="75" height="75">
 
-	<p style="display: inline-block; font-size: 60px; margin-bottom: 0px; padding-left: 250px">Support</p>
+	<p style="font-size: 60px; margin-bottom: 0px; padding-left: 255px; padding-top: 7px">Drop Boxes</p>
 	<img src="FedExPurpOran.png" alt="Logo Colors" class="fedex-logo" width="220" height="110">
-	<hr>
+	<hr class="hr1">
 
-	<h2 style="font-size: 20px; margin-top: 35px; margin-bottom: 0px; padding-left: 250px">Direct Supervisor</h2>
-	<p style="font-size: 20px; margin-top: 0px; margin-bottom: 20px; padding-left: 250px">123-456-7890</p>
-
-	<h2 style="font-size: 20px; margin-top: 15px; margin-bottom: 0px; padding-left: 250px">Operations</h2>
-	<p style="font-size: 20px; margin-top: 0px; margin-bottom: 20px; padding-left: 250px">123-456-7890</p>
-
-	<h2 style="font-size: 20px; margin-top: 15px; margin-bottom: 0px; padding-left: 250px">Human Resources</h2>
-	<p style="font-size: 20px; margin-top: 0px; margin-bottom: 20px; padding-left: 250px">123-456-7890</p>
-
-	<h2 style="font-size: 20px; margin-top: 15px; margin-bottom: 0px; padding-left: 250px">Safety & Security</h2>
-	<p style="font-size: 20px; margin-top: 0px; margin-bottom: 20px; padding-left: 250px">123-456-7890</p>
-
-	<h2 style="font-size: 20px; margin-top: 15px; margin-bottom: 0px; padding-left: 250px">IT Help Desk</h2>
-	<p style="font-size: 20px; margin-top: 0px; margin-bottom: 20px; padding-left: 250px">123-456-7890</p>
+	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 360px">Status</p>
+	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Address</p>
+	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Capacity</p>
+	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Last Pickup</p>
+	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Battery Level</p>
+	<hr class="hr2">
 </body>
 
 

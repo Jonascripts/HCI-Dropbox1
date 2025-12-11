@@ -2,9 +2,10 @@
 <html lang="en">
 
 
+
 <head>
 	<meta charset="UTF-8">
-	<title>Analytics Page</title>
+	<title>Main Page</title>
 	<style>
 		body {
             	font-family: "Arial", Helvetica, sans-serif;
@@ -20,13 +21,36 @@
         		margin: 50px;
     		}
 
+		
+		#bar-graph {
+			position: absolute;
+			top: 145px;
+			left: 550px;
+			width: 500px;
+		}
+
+		#packages-per-hour-bar-graph {
+			width: 500px;
+			height: 350px;
+		}
+
+		#pie-chart {
+			width: 400px;
+			height: 400px;
+		}
+
+		#doughnut-chart {
+			width: 400px;
+			height: 400px;
+		}
+
 
 		.button-home {
 			position: absolute;
 			top: 175px;
 			left: 50px;
 			background-color: white;
-			color: block;
+			color: black;
 			padding: 5px 10px;
 			border: none;
 			cursor: pointer;
@@ -44,7 +68,7 @@
 			top: 205px;
 			left: 50px;
 			background-color: white;
-			color: block;
+			color: black;
 			padding: 5px 10px;
 			border: none;
 			cursor: pointer;
@@ -62,7 +86,7 @@
 			top: 235px;
 			left: 50px;
 			background-color: white;
-			color: block;
+			color: black;
 			padding: 5px 10px;
 			border: none;
 			cursor: pointer;
@@ -80,7 +104,7 @@
 			top: 265px;
 			left: 50px;
 			background-color: white;
-			color: block;
+			color: black;
 			padding: 5px 10px;
 			border: none;
 			cursor: pointer;
@@ -98,7 +122,7 @@
 			top: 295px;
 			left: 50px;
 			background-color: white;
-			color: block;
+			color: black;
 			padding: 5px 10px;
 			border: none;
 			cursor: pointer;
@@ -129,6 +153,23 @@
 			cursor: pointer;
 		}
 
+		.button-list {
+			position: absolute;
+  			border-radius: 16px;
+			top: 750px;
+			left: 675px;
+			background-color: light grey;
+			color: dark grey;
+			padding: 4px 20px;
+			border-style: solid;
+			border-color: dark grey;
+			display: flex;  			
+			justify-content: center;
+  			align-items: center;
+			font-size: 12px;
+			cursor: pointer;
+		}
+
 		.fedex-logo {
 			position: absolute;
 			top: 50px;
@@ -143,34 +184,58 @@
 
 		.search-placeholder {
 			position: absolute;
-			top: 165px;
+			top: 410px;
 			left: 255px;
 		}
 
 		.dropdown1-placeholder {
 			position: absolute;
-			top: 165px;
+			top: 410px;
 			left: 880px;
 		}
 
 		.dropdown2-placeholder {
 			position: absolute;
-			top: 165px;
+			top: 410px;
 			left: 1080px;
 		}
 
-		.graphs1-placeholder {
+		.notifications-placeholder {
 			position: absolute;
-			top: 260px;
-			left: 243px;
-			width: 1030px;
+			top: 170px;
+			left: 260px;
+			width: 250px;
 		}
 
-		.graphs2-placeholder {
+		.boxlist-placeholder {
 			position: absolute;
-			top: 760px;
-			left: 259px;
-			width: 1005px;
+			top: 500px;
+			left: 350px;
+			width: 820px;
+		}
+
+		.button-list1 {
+			position: absolute;
+			top: 505px;
+			left: 350px;
+			background-color: white;
+			color: black;
+			padding: 5px 10px;
+			border: none;
+			cursor: pointer;
+			opacity: 0;
+		}
+
+		.button-list2 {
+			position: absolute;
+			top: 545px;
+			left: 350px;
+			background-color: white;
+			color: black;
+			padding: 5px 10px;
+			border: none;
+			cursor: pointer;
+			opacity: 0;
 		}
 
 		.hr1 {
@@ -183,7 +248,14 @@
 		.hr2 {
 			width: 1000px;
 			position: absolute;
-			top: 700px;
+			top: 400px;
+			left: 260px;
+		}
+
+		.hr3 {
+			width: 1000px;
+			position: absolute;
+			top: 487px;
 			left: 260px;
 		}
 	</style>
@@ -197,6 +269,7 @@
 	<a href="Analytics.html"><button class="button-analytics"><b>Analytics</b></button></a>
 	<a href="Alerts.html"><button class="button-alerts"><b>Alerts</b></button></a>
 	<a href="Support.html"><button class="button-support"><b>Support</b></button></a>
+	<a href="List.html"><button class="button-list">View More</button></a>
 	<img src="images/HomeIcon.png" alt="homeicon" class="home-icon">
 	<img src="images/MapIcon.png" alt="mapicon" class="map-icon">
 	<img src="images/AnalyticsIcon.png" alt="analyticsicon" class="analytics-icon">
@@ -205,22 +278,33 @@
 	<img src="images/SearchbarPlaceholder.png" alt="searchbar" class="search-placeholder">
 	<img src="images/DropdownPlaceholder1.png" alt="region" class="dropdown1-placeholder">
 	<img src="images/DropdownPlaceholder2.png" alt="district" class="dropdown2-placeholder">
-	<img src="images/GraphsPlaceholder1.png" alt="graphs1" class="graphs1-placeholder">
-	<img src="images/GraphsPlaceholder2.png" alt="graphs2" class="graphs2-placeholder">
+	<img src="images/NotificationsPlaceholder.png" alt="notifications" class="notifications-placeholder">
+	<img src="images/BoxlistPlaceholder.png" alt="boxlist" class="boxlist-placeholder">
+	<a href="DropboxExample1.html"><button class="button-list1">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</button></a>
+	<a href="DropboxExample2.html"><button class="button-list2">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</button></a>
+	
 
-	<p style="font-size: 60px; margin-bottom: 0px; padding-left: 255px; padding-top: 7px">Analytics</p>
+	<p style="font-size: 60px; margin-bottom: 0px; padding-left: 255px; padding-top: 7px">Welcome User</p>
 	<img src="images/FedExPurpOran.png" alt="Logo Colors" class="fedex-logo" width="220" height="110">
 	<hr class="hr1">
 
-	<p style="font-size: 24px; margin-bottom: 0px; padding-left: 255px; padding-top: 70px">Performance</p>
+	<p style="display: inline-block; font-size: 20px; margin-top: 10px; margin-bottom: 0px; padding-left: 260px">Notifications</p>	
 
+	<p></p>
 	<hr class="hr2">
-	<p style="font-size: 24px; margin-bottom: 0px; padding-left: 255px; padding-top: 435px">Maintenance</p>
+
+	<p style="display: inline-block; font-size: 16px; margin-top: 290px; margin-bottom: 0px; padding-left: 400px">Status</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 290px; margin-bottom: 0px; padding-left: 50px">Address</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 290px; margin-bottom: 0px; padding-left: 120px">Capacity</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 290px; margin-bottom: 0px; padding-left: 115px">Last Pickup</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 290px; margin-bottom: 0px; padding-left: 85px">Battery Level</p>
+	<hr class="hr3">
 
 	<div id="bar-graph"></div>
 	<div id="packages-per-hour-bar-graph"></div>
 	<div id="pie-chart"></div>
 	<div id="doughnut-chart" width={600} height={400}></div>
+
 </body>
 
 

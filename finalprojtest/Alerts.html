@@ -6,6 +6,12 @@
 	<meta charset="UTF-8">
 	<title>Alerts List Page</title>
 	<style>
+		body {
+            	font-family: "Arial", Helvetica, sans-serif;
+            	font-size: 16px;
+		color: #2B2B2B;
+        	}
+
 		.container {
         		position: relative; /* reference point for absolute positioning */
         		width: 300px;
@@ -153,6 +159,25 @@
 			left: 1080px;
 		}
 
+		.alertlist-placeholder {
+			position: absolute;
+			top: 250px;
+			left: 353px;
+			width: 820px;
+		}
+
+		.button-list1 {
+			position: absolute;
+			top: 255px;
+			left: 350px;
+			background-color: white;
+			color: black;
+			padding: 5px 10px;
+			border: none;
+			cursor: pointer;
+			opacity: 0;
+		}
+
 		.hr1 {
 			width: 1000px;
 			position: absolute;
@@ -163,7 +188,7 @@
 		.hr2 {
 			width: 1000px;
 			position: absolute;
-			top: 252px;
+			top: 237px;
 			left: 260px;
 		}
 	</style>
@@ -172,7 +197,7 @@
 
 <body>
 	<button class="button-profile"><b><img src="images/ProfileIconPlaceholder.png" alt="profile"></b></button>
-	<a href="Dashboard.html"><button class="button-home"><b>Home</b></button></a>
+	<a href="index.html"><button class="button-home"><b>Home</b></button></a>
 	<a href="Map.html"><button class="button-map"><b>Map</b></button></a>
 	<a href="Analytics.html"><button class="button-analytics"><b>Analytics</b></button></a>
 	<a href="Alerts.html"><button class="button-alerts"><b>Alerts</b></button></a>
@@ -185,23 +210,19 @@
 	<img src="images/SearchbarPlaceholder.png" alt="searchbar" class="search-placeholder">
 	<img src="images/DropdownPlaceholder1.png" alt="region" class="dropdown1-placeholder">
 	<img src="images/DropdownPlaceholder2.png" alt="district" class="dropdown2-placeholder">
+	<img src="images/AlertlistPlaceholder.png" alt="alertlist" class="alertlist-placeholder">
+	<a href="DropboxExample1.html"><button class="button-list1">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</button></a>
 
 	<p style="font-size: 60px; margin-bottom: 0px; padding-left: 255px; padding-top: 7px">Drop Boxes</p>
 	<img src="images/FedExPurpOran.png" alt="Logo Colors" class="fedex-logo" width="220" height="110">
 	<hr class="hr1">
 
-	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 360px">Status</p>
-	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Address</p>
-	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Capacity</p>
-	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Last Pickup</p>
-	<p style="display: inline-block; font-size: 20px; margin-top: 100px; margin-bottom: 0px; padding-left: 100px">Battery Level</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 90px; margin-bottom: 0px; padding-left: 400px">Status</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 90px; margin-bottom: 0px; padding-left: 50px">Address</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 90px; margin-bottom: 0px; padding-left: 120px">Capacity</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 90px; margin-bottom: 0px; padding-left: 115px">Last Pickup</p>
+	<p style="display: inline-block; font-size: 16px; margin-top: 90px; margin-bottom: 0px; padding-left: 85px">Battery Level</p>
 	<hr class="hr2">
-
-	<script src="src/components/Line.js"></script>
-	<script src="src/components/Bar.js"></script>
-	<script src="src/components/PackagesPerHourBar.js"></script>
-	<script src="src/components/Pie.js"></script>
-	<script src="src/components/donut.js"></script>
 </body>
 
 
